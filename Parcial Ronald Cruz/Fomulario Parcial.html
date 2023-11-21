@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta charset="utf-8">
+      <meta name="Description" content="MIK Consulting SAC">
+      <meta name="keywords" content="">
+      <meta name="author" content="MIK Consulting SAC">
+      <title>Mik Consulting SAC</title>
+      <!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+      <link rel="stylesheet" href="stylesheets/Estilo Inicio parcial.css">
+      <link rel="stylesheet" href="stylesheets/Estilo Formulario Parcial.css">
+   </head>
+   <body>
+      <header>
+        <h1>Bienvenidos a MIK Consulting</h1>
+         <nav>
+            <a href="Pagina inicio parcial.html" class="welcome_tile">Consultoría y asesoría</a>
+			   <a href="Pagina inicio parcial.html" class="hardcore_tile">Ingeniería de software</a>
+			   <a href="Fomulario Parcial.html" class="tips_tile selected">Registro</a>
+         </nav>
+      </header>
+      
+      <form action="/enviar-mensaje" method="POST">
+        <h1> <center>Formulario de registro</center></h1>
+		<h3><center>Ingresa tus datos para resgistrarte</center></h3>
+			<label class= "label1" for="nombres">Nombres:</label><br />
+			<input required="true"type="text" class="text1" id="nombres" name="nombres" placeholder="Ingrese sus nombres" />
+			
+            <label class= "label1" for="apellidos">Apellidos:</label><br />
+			<input required="true"class="text1" type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos"/><br />
+			
+            <label class= "label1" for="email">Email:</label><br />
+			<input required="true" class="text1" type="text" id="email" name="email" placeholder="Ingrese un email" /><br />
+            
+            <label class= "label1" for="password1">Ingrese password:</label><br />
+            <input required="true"class="text1" type="password" id="password1" placeholder="Ingrese un password" /><br />
+			
+            <label class= "label1" for="password2">Confirme password:</label><br />
+            <input required="true"class="text1" type="password" id="password2" placeholder="Confirme password" /><br />
+
+            <label class= "label1" for="numero">Número de colaboradores en su organización:</label><br />
+            <input class="text1" type="number" placeholder="Ingrese un número" /><br />
+
+            <label class= "label1" for="title_1">Rol en la organización:</label><br />
+                <input type="radio" id="title_1" name="title" value="K" />Director/Gerente <br />
+                <input type="radio" id="title_1" name="title" value="K" />Líder de servicio/Jefe<br />
+                <input type="radio" id="title_1" name="title" value="K" />Analista/programador<br /><br />
+
+            <label class= "label1" for="numero">Número de colaboradores en su organización:</label><br />
+            <select id="card" name="usercard">
+                <option value="visa">Menor de 50</option>
+                <option value="mc">En 50 y 300 </option>
+                <option value="amex">Entre 300 y 700</option>
+                <option value="amex">Más de 700</option>
+            </select><br/>
+            
+            <label class= "label1" for="numero">Tópicos de interés:</label><br />
+              <input type="checkbox" id="devops" name="interest" value="devops" />
+              <label class= "label2" for="devops">DevOps</label>
+              <input type="checkbox" id="seguridad" name="interest" value="seguridad" />
+              <label class= "label2" for="seguridad">Seguridad</label>
+              <input type="checkbox" id="arquitectura" name="interest" value="arquitectura" />
+              <label class= "label2" for="arquitectura">Arquitectura</label>
+              <input type="checkbox" id="nube" name="interest" value="nube" />
+              <label class= "label2" for="nube">Nube</label>
+              <input type="checkbox" id="desarrollo" name="interest" value="desarrollo" />
+              <label class= "label2" for="desarrollo">Desarrollo</label>
+              <br/>
+
+            <label class= "label1" for="mensaje">Comentarios:</label><br/>
+			<textarea id="mensaje" name="mensaje" placeholder="Ingrese sus comentarios"></textarea><br />
+			
+            <input type="submit" value="Registrar" />
+            <input type="reset" value="Limpiar formulario" />
+		</form>
+      <footer>
+         <nav>
+            <a href="Pagina inicio parcial.html" class="welcome_tile selected">Consultoría y asesoría</a>
+            <a href="Pagina inicio parcial.html" class="hardcore_tile">Ingeniería software</a>
+            <a href="Fomulario Parcial.html" class="tips_tile">Registro</a>
+         </nav>
+      </footer>
+   </body>
+</html>                                                                        
